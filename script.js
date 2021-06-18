@@ -13,11 +13,11 @@ const countdown = () => {
         const textHour = Math.floor((endTime % day) /hour);
         const textMinute = Math.floor((endTime % hour) /minute);
         const textSecond = Math.floor((endTime % minute) /second);
-    
+     
+        document.querySelector('.second h1').innerText = textSecond;
         document.querySelector('.day h1').innerText = textDay;
         document.querySelector('.hour h1').innerText = textHour;
         document.querySelector('.minute h1').innerText = textMinute;
-        document.querySelector('.second h1').innerText = textSecond;
     } else {
         giveawayOver();
     }
